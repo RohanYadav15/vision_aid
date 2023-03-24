@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         logoWidth: 150,
         backgroundColor: Colors.grey.shade400,
         navigator: HomeScreen(),
-        durationInSeconds: 5,
+        durationInSeconds: 3,
       ),
     );
   }

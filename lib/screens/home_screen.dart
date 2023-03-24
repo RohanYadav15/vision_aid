@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     tts.speak("Tap To Take Picture");
-    // vision.authenticate();
+    vision.authenticate();
   }
 
   void takeImage() async {
@@ -36,11 +36,8 @@ class _HomeScreenState extends State<HomeScreen> {
       await tts.speak("Image Taken, Please wait for results");
       await Future.delayed(Duration(seconds: 3));
       setState(() => showAnimation = false);
-      // await vision.authenticate();
-      print('I am here 2');
+      await vision.authenticate();
       String label = await vision.getLabels(_image?.path);
-      //Implement code for labelling
-      print('I am here 3');
       Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => ResultScreen(label, _image?.path)));
     }
