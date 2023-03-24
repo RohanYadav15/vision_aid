@@ -1,0 +1,7 @@
+0 Night lamp
+1 Water Bottle
+2 Cup
+3 laptop
+4 plate
+5  pen
+6 Mobile
